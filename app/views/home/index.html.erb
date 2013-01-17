@@ -1,0 +1,24 @@
+<div class="container">
+<h1>Search For Availability</h1>
+
+<%= form_tag :update, :method => :get, :class => "form-horizontal" do %>
+  <%= label_tag(:bdate, "Start Date:") %>
+  <%= datepicker_input :bdate, params[:bdate], :tabindex => 70, :dateFormat => "M d, yy" %>
+  <%= label_tag(:edate, "End Date:") %>
+  <%= datepicker_input :edate, params[:edate], :dateFormat => "M d, yy" %>
+  <%= label_tag(:units, "Number of Units Required:") %>
+  <%= select(@object, :units, (0..99).to_a, :selected => 1) %>
+  <%= label_tag(:guests, "Number of Adult Guests:") %>
+  <%= select(@object, :guests, (0..99).to_a, :selected => 2) %>
+  <%= label_tag(:guests, "Number of Children Guests:") %>
+  <%= select(@object, :children, (0..99).to_a) %>
+  <%= label_tag(:guests, "Number of Pets:") %>
+  <%= select(@object, :pets, (0..99).to_a) %>
+</p>
+  <%= submit_tag "Submit" %>
+<% end %>
+
+</div>
+
+
+

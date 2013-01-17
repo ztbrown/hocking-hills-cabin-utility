@@ -1,0 +1,21 @@
+<h1>Available Rooms</h1>
+
+<ul class="unstyled">
+<% @links.each do |link| %>
+	<li class="<%= cycle("even", "odd") %>">
+
+	<div class="imageContainer">
+		<img class="image" src=<%=link[:image]%> />
+	</div>
+	<div class="textContainer">
+		<h2 class="title"><%=link[:title]%></h1>
+		<p class="description"><%=link[:description]%></p>
+		<h3 class="rate"><%=link[:rates]%></h3>
+		<a class="book-button btn btn-primary" href=<%= link[:bookLink]%>>Book It!</a>
+	</div>
+
+
+	</li>
+<% end %>
+</ul>
+

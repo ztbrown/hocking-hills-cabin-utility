@@ -1,0 +1,53 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#ui-datepicker-div{
+	margin-left: 255px;
+	margin-top: -35px;
+}
+
+body{
+	padding-left: 26px; 
+}
+
+.odd{
+    background:#dedede;
+}
+
+li{
+	height: 192px; 
+}
+
+.imageContainer{
+	float: left; 
+
+}
+
+.textContainer{
+	margin-top: 13px;
+	overflow: hidden;
+	margin-left: 241px;
+}
+
+.image{
+	margin-left: 22px; 
+	margin-top: 19px; 
+}
+
+.book-button{
+	position: absolute; 
+	right: 15px; 
+	margin-top: -62px;  
+}
+
+.rate{
+	font-size: 17.5px;
+	position: absolute;
+	right: 15px;
+	margin-top: -104px;
+}
+
+.description{
+	width: 54%; 
+}
