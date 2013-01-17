@@ -40,9 +40,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    daemons (1.1.9)
     domain_name (0.5.7)
       unf (~> 0.0.3)
     erubis (2.7.0)
+    eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.1)
@@ -71,6 +73,7 @@ GEM
     net-http-persistent (2.8)
     nokogiri (1.5.6)
     ntlm-http (0.1.1)
+    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.4)
     rack-cache (1.2)
@@ -108,6 +111,10 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.7)
+    thin (1.5.0)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.16.0)
     tilt (1.3.3)
     treetop (1.4.12)
@@ -132,7 +139,9 @@ DEPENDENCIES
   jquery-rails
   jquery_datepicker
   mechanize
+  pg
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3
+  thin
   uglifier (>= 1.0.3)
