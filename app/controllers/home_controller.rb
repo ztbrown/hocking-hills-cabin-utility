@@ -21,7 +21,16 @@ class HomeController < ApplicationController
   				 "bttrswt", 
   				 "cabinsvista",
   				 "bnc",
-  				 "crockettsrun"]
+  				 "crockettsrun",
+           "GoodEarth",
+           "foxglove",
+           "BourbanRidge",
+           "cola",
+           "getaway",
+           "CedarPinesCabins",
+           "bearsden",
+           "backwoodsretreat",
+           "lazy"]
 
     beginDate = params[:bdate].first
     endDate = params[:edate].first
