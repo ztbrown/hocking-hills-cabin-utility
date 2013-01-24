@@ -24,6 +24,14 @@ li{
 
 }
 
+.modal {
+	width: 620px; 
+}
+
+.modal.fade.in{
+	top: 39%; 
+}
+
 .textContainer{
 	margin-top: 13px;
 	overflow: hidden;
@@ -33,6 +41,19 @@ li{
 .image{
 	margin-left: 22px; 
 	margin-top: 19px; 
+}
+
+#loadingDiv {
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
 }
 
 .book-button{
@@ -46,6 +67,18 @@ li{
 	position: absolute;
 	right: 15px;
 	margin-top: -104px;
+}
+
+iframe {
+    display: block; 
+    margin: 0 auto;
+    background-color: #777;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.closeit{
+	display: none; 
 }
 
 .description{

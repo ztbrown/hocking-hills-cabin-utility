@@ -9,6 +9,10 @@ group :development do
 	gem 'sqlite3'
 end
 
+group :development, :test do
+  gem 'jasminerice'
+end
+
 group :production do
   gem 'thin'
   gem 'pg'
@@ -28,11 +32,16 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'private_pub'
+gem 'thin'
 gem 'jquery-rails'
 gem 'mechanize'
 gem 'client_side_validations'
 gem 'jquery_datepicker'
 gem 'bootstrap-sass'
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'slim'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

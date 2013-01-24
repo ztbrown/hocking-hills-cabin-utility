@@ -1,7 +1,10 @@
-<div class="container">
+<div id="loadingDiv"></div>
+<div id="search_form" class="container">
 <h1>Search For Availability</h1>
 
-<%= form_tag :update, :method => :get, :class => "form-horizontal" do %>
+<%= subscribe_to "/messages/" + @channel %>
+
+<%= form_tag :update, :method => :get, :class => "form-horizontal", remote: true do%>
   <%= label_tag(:bdate, "Start Date:") %>
   <%= datepicker_input :bdate, params[:bdate], :tabindex => 70, :dateFormat => "M d, yy" %>
   <%= label_tag(:edate, "End Date:") %>
@@ -13,10 +16,13 @@
   <%= label_tag(:guests, "Number of Children Guests:") %>
   <%= select(@object, :children, (0..99).to_a) %>
   <%= label_tag(:guests, "Number of Pets:") %>
+  <%= hidden_field_tag :channel, @channel %>
   <%= select(@object, :pets, (0..99).to_a) %>
 </p>
   <%= submit_tag "Submit" %>
 <% end %>
+
+
 
 </div>
 
